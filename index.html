@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Todo List</title>
+		<link
+			href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="./assets/css/styles.css" />
+		<script src="./assets/javascript/app.js" defer></script>
+	</head>
+	<body>
+		<div class="todo_container">
+			<!--  -->
+			<header>
+				<div>
+					<h2 js_date="day_and_month">(Dia) de (mês)</h2>
+					<h3 js_date="years">Ano</h3>
+				</div>
+				<h2 js_date="week">Dia da semana</h2>
+			</header>
+
+			<!--  -->
+			<div class="progress_bar" js-progress_bar>
+				<div class="progress" js_progress></div>
+			</div>
+
+			<!--  -->
+			<div id="toolbar" js_toolbar>
+				<div class="filter">
+					<div class="filter_buttons">
+						<button type="button" js_filter="all">
+							<i class="bx bx-list-check"></i>
+							<span>Todas</span>
+						</button>
+
+						<button type="button" js_filter="done">
+							<i class="bx bx-check"></i>
+							<span>Realizadas</span>
+						</button>
+
+						<button type="button" js_filter="todo">
+							<i class="bx bxs-time-five"></i>
+							<span>Pendentes</span>
+						</button>
+					</div>
+
+					<form id="form_search" autocomplete="off">
+						<div id="content_search">
+							<input
+								type="text"
+								id="search_input"
+								placeholder="Buscar"
+								maxlength="60"
+								js_search_input
+							/>
+							<button
+								type="submit"
+								id="erase_button"
+								js_erase_button
+								title="Apagar busca"
+							>
+								<i class="bx bxs-chevrons-left"></i>
+							</button>
+						</div>
+					</form>
+				</div>
+			</div>
+
+			<!-- add task -->
+			<form id="todo_form" js_todo_form autocomplete="off">
+				<h3>Adicione a sua tarefa</h3>
+
+				<div class="form_control" js_form_control>
+					<input type="text" id="add_task" maxlength="60" js_todo_input />
+					<button
+						type="submit"
+						id="add_task_btn"
+						js_add_task_btn
+						title="Adicionar tarefa"
+					>
+						<i class="bx bx-plus"></i>
+					</button>
+				</div>
+			</form>
+
+			<!-- edit  -->
+			<form id="edit_form" class="hide" js_edit_form autocomplete="off">
+				<h3>Edite a sua tarefa</h3>
+
+				<div class="form_control">
+					<input type="text" id="edit_input" js_edit_input />
+
+					<button
+						type="submit"
+						id="edit_input_btn"
+						title="Salvar alteração"
+					>
+						<i class="bx bxs-save"></i>
+					</button>
+				</div>
+
+				<button id="cancel_edit_btn" js_cancel_edit_button>Cancelar</button>
+			</form>
+
+			<!-- tasks structure -->
+			<div class="todo_list" js_todo_list>
+				<!-- <div class="todo done" js_todo>
+					<div class="todo_title" js_todo_title>
+						<h3>Tarefa 1</h3>
+					</div>
+
+					<div id="todo_buttons">
+						<button
+							class="finish_todo"
+							ls_finish_todo
+							title="Marcar tarefa"
+						>
+							<i class="bx bx-check"></i>
+						</button>
+					
+						<button
+							class="edit_todo"
+							ls_edit_todo
+							title="Editar tarefa"
+						>
+							<i class="bx bxs-edit-alt"></i>
+						</button>
+					
+						<button
+							class="remove_todo"
+							ls_remove_todo
+							title="Deletar tarefa"
+						>
+						<i class="bx bxs-trash"></i>
+						</button>
+					</div>
+				</div>
+				
+				<div class="todo done" js_todo>
+					<div class="todo_title" js_todo_title>
+						<h3>Tarefa 1</h3>
+					</div>
+
+					<div id="todo_buttons">
+						<button
+							class="finish_todo"
+							ls_finish_todo
+							title="Marcar tarefa"
+						>
+							<i class="bx bx-check"></i>
+						</button>
+						<button
+							class="edit_todo"
+							ls_edit_todo
+							title="Editar tarefa"
+						>
+							<i class="bx bxs-edit-alt"></i>
+						</button>
+						<button
+							class="remove_todo"
+							ls_remove_todo
+							title="Deletar tarefa"
+						>
+						<i class="bx bxs-trash"></i>
+						</button>
+					</div>
+				</div> -->
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,22 @@
+Itens desejáveis:
+- Design responsivo;
+- Mostrar a data atual;
+- Ao clicar na tarefa, permitir editar o texto e exibir um botão com a opção "Excluir tarefa";
+- Validar tarefas inseridas, não permitindo campos vazios e limitando ao máximo de 60 caracteres.
+ 
+Será um diferencial:
+- Animação na barra de progresso;
+- Tooltip nos botões que não possuem legenda;
+- Persistir os dados em um banco MySQL utilizando PHP e requisições Ajax para não recarregar a página.
+ 
+Tecnologias desejáveis:
+- JavaScript;
+- CSS3;
+- HTML5.
+ 
+Tecnologias que serão um diferencial. Fique à vontade caso deseje utilizar uma ou mais destas:
+- PHP;
+- MySQL;
+- Git;
+- Docker;
+- NPM.
